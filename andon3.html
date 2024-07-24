@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andon Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            border: 1px solid #000;
+        }
+        th, td {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .shift-header {
+            background-color: #ffbf80;
+            font-weight: bold;
+        }
+        .cell-scanning {
+            background-color: #ffb3b3;
+        }
+        .voltage-ir {
+            background-color: #b3ffb3;
+        }
+        .pack-assembly {
+            background-color: #b3daff;
+        }
+        .eol {
+            background-color: #e6b3ff;
+        }
+        .alt {
+            background-color: #ffffb3;
+        }
+        .model-header {
+            background-color: #4da6ff;
+            color: #fff;
+        }
+        .footer {
+            background-color: #ffcc99;
+        }
+        .green {
+            background-color: #66ff66;
+        }
+        .red {
+            background-color: #ff6666;
+        }
+        .yellow {
+            background-color: #ffff66;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th class="shift-header" colspan="7">SHIFT-A</th>
+            </tr>
+            <tr>
+                <th class="model-header"></th>
+                <th class="model-header">LINE-1</th>
+                <th class="model-header">Actual/Target</th>
+                <th class="model-header">LINE-2</th>
+                <th class="model-header">Actual/Target</th>
+            </tr>
+            <tr>
+                <td class="cell-scanning">Cell Scanning</td>
+                <td>Kanger 1</td>
+                <td>0/156</td>
+                <td>Kanger 1</td>
+                <td>0/156</td>
+            </tr>
+            <tr>
+                <td class="voltage-ir">Voltage & IR</td>
+                <td>Kanger 1</td>
+                <td>0/156</td>
+                <td>Kanger 1</td>
+                <td>0/156</td>
+            </tr>
+            <tr>
+                <td class="pack-assembly">Pack Assembly</td>
+                <td>Kanger 2</td>
+                <td>0/12</td>
+                <td>Kanger 2</td>
+                <td>0/12</td>
+            </tr>
+            <tr>
+                <td class="eol">EOL</td>
+                <td>Nova LR</td>
+                <td>0/14</td>
+                <td>Nova LR</td>
+                <td>0/14</td>
+            </tr>
+            <tr>
+                <td class="alt">ALT</td>
+                <td>Kanger 2</td>
+                <td>0/12</td>
+                <td>Kanger 2</td>
+                <td>0/12</td>
+            </tr>
+        </table>
+    </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th class="shift-header" colspan="7">SHIFT-C</th>
+            </tr>
+            <tr>
+                <th class="model-header"></th>
+                <th colspan="2" class="footer">LINE-1</th>
+                <th class="footer">Actual/Target</th>
+                <th colspan="2" class="footer">LINE-2</th>
+                <th class="footer">Actual/Target</th>
+            </tr>
+            <tr>
+                <td class="cell-scanning">Cell scanning</td>
+                <td>Kanger 1</td>
+                <td colspan="2" class="green">156/156</td>
+                <td>Kanger 1</td>
+                <td colspan="2" class="green"> 156/156</td>
+            </tr>
+            <tr>
+                <td class="voltage-ir">Voltage & IR</td>
+                <td>Kanger 1</td>
+                <td colspan="2" class="green">13/13</td>
+                <td>Kanger 1</td>
+                <td colspan="2" class="green">12/12</td>
+            </tr>
+            <tr>
+                <td class="pack-assembly">Pack Assembly</td>
+                <td>Kanger 2</td>
+                <td colspan="2" class="green">12/12</td>
+                <td>Kanger 2</td>
+                <td colspan="2" class="green">12/12</td>
+            </tr>
+            <tr>
+                <td class="eol">EOL</td>
+                <td>Nova LR</td>
+                <td colspan="2" class="green">10/15</td>
+                <td>Nova LR</td>
+                <td colspan="2" class="green">10/15</td>
+            </tr>
+            <tr>
+                <td class="alt">ALT</td>
+                <td>Kanger 2</td>
+                <td colspan="2" class="yellow">12/15</td>
+                <td>Kanger 2</td>
+                <td colspan="2" class="red">12/15</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container scroll-right">
+        <span>Total PDI</span>
+        <marquee behavior="" direction="left">Total PDI = </marquee>
+     </div>
+</body>
+</html>
